@@ -1,48 +1,52 @@
 <!DOCTYPE html>
 <html>
+<!--
+  * Please see the included README.md file for license terms and conditions.
+  -->
 <head>
     <title>Blank Standard HTML5 Web App Template</title>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
 
+    <!-- see http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag -->
     <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
     <style>
+        /* following two viewport lines are equivalent to meta viewport statement above, needed for Windows */
+        /* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html and http://dev.w3.org/csswg/css-device-adapt/ */
         @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }  @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
         @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }           @viewport { user-zoom: fixed ; min-zoom: 100% ; }
     </style>
 
+    <!-- Uncomment the following scripts if you convert your "Standard HTML5" project into a "Cordova" project. -->
+    <!-- <script src="cordova.js"></script> -->          <!-- phantom library, needed for Cordova api calls, added during build -->
+    <!-- <script src="js/app.js"></script> -->           <!-- recommended location of your JavaScript code relative to other JS files -->
+    <!-- <script src="xdk/init-dev.js"></script> -->     <!-- normalizes device and document ready events, see README for details -->
 </head>
 
 <body>
 
-    <h1>The Charge of the Light Brigade</h1>
-    <hr/>
-    <h2>Alfred, Lord Tennyson (1854)</h2>
-    <pre>
-        Half a league, half a league,
-        Half a league onward,
-        All in the valley of Death
-        Rode the six hundred.
-        'Forward, the Light Brigade!
-        Charge for the guns!' he said:
-        Into the valley of Death
-        Rode the six hundred.
-    </pre>
+    1. Supported attributes of the &gt;area&lt; tag:  atl, href, target, rel, media, hreflang, type, shape, and coords
+    <br/><br/>
     
-    <hr/>
+    2. Paragraphs with same ID tag
+    <p id="para">Paragraph 1</p>
+    <p id="para">Paragraph 2</p>
     
-    <blockquote>Exceptions prove the rule, and destroy the battle plan. - Murphy's Laws of Combat</blockquote>
-    
-    <br/>
+    3. <em>src</em><br/>
+    Purpose: Provides the address to a resource<br/>
+    Applicable to elements:  audio, embed, iframe, img, input, script, source, track, and video
 
-    <b>Fire</b>
-    <ul>
-        <li>noun. combustion or burning, in which substances combine chemically with oxygen from the air and typically give out bright light, heat, and smoke</li>
-        <li>noun. the shooting of projectiles, especially bullets from guns</li>
-        <li>verb. discharge a gun in order to explosively propel (a bullet or projectile)</li>
-    </ul>
-    
-    Address tag: <address>1600 Pennsylvania Avenue, Washington, DC</address>
-    <br/>
-    <textarea>Enter your text here.</textarea>
+    4. Ordered list starting at 11 and the reversed list.
+    <ol start="11" title="Activity List">
+        <li>Gaming</li>
+        <li>Shooting</li>
+        <li>Running</li>
+        <li>Sleeping</li>
+    </ol>
+    <ol start="11" title="Activity List" reversed>
+        <li>Gaming</li>
+        <li>Shooting</li>
+        <li>Running</li>
+        <li>Sleeping</li>
+    </ol>
 </body>
 </html>
